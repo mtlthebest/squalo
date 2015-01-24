@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voloEH101>
+  <matricola>81633</matricola>
+  <inizioVoloZulu>232105ZGEN15</inizioVoloZulu>
+  <fusoOrarioLocale>A</fusoOrarioLocale>
+  <efficienza>
+    <stato>CR</stato>
+    <posizione>E</posizione>
+  </efficienza>
+  <tacche>
+    <tacca>
+      <durataORR>1,6</durataORR>
+    </tacca>
+  </tacche>
+  <avarie>
+  </avarie>
+  <controlliFunzionali>
+  </controlliFunzionali>
+</voloEH101>

@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE voloEH101 SYSTEM "/home/mtl/efficienzaRefactoring/voloEH101.dtd">
-
 <!-- Questo documento XML ha lo scopo principale di registrare
      in modo strutturato tutte quelle informazioni che il Capo
      Equipaggio annota sul "Libretto Tecnico di Volo" al
@@ -19,7 +18,6 @@
      registrate sul Marcavoli da parte dei piloti, oppure dati
      relativi ai "preparativi" per il volo stesso (ultime
      ispezioni giornaliere e pre-volo, efficienza, ecc...). -->
-
 <!-- Convenzioni impiegate:
      1) I gruppi data-orario (GDO) sono intenzionalmente
         memorizzati in fuso ZULU. Il fuso locale viene
@@ -39,93 +37,82 @@
         e i minuti, riferiti all'ingaggio. Cio' allo scopo
         di creare file con nomi univoci e di facilitarne
         l'ordinamento. -->
-
 <voloEH101>
-
-  <!-- Sezione 1: identificazione dell'aeromobile -->
-  <matricola>81633</matricola>
-
-  <!-- Sezione 2: condizioni preliminari al volo -->
-  <decolloDa>Sarzana</decolloDa>
-  <fusoOrarioLocale>A</fusoOrarioLocale>
-  <ispezione tipo="daily">
-    <GDOZulu>221030ZGEN15</GDOZulu>
-    <titolare modo="stringa">Sgt. SSP/TM SAER TUMBARELLO Giovanni</titolare>
-  </ispezione>
-  <efficienza>
-    <stato>CR</stato>
-    <posizione>E</posizione>
-    <titolare modo="codFisc">LFFMTT84E07E897J</titolare>
-  </efficienza>
-  <ispezione tipo="pre-flight">
-    <GDOZulu>231930ZGEN15</GDOZulu>
-    <titolare modo="stringa">Sc. 2^ cl. SSP/TM SAER ALFANO Giuseppe</titolare>
-  </ispezione>
-
-  <!-- Sezione 3: attivita' di volo -->
-  <ingaggioZulu>232105ZGEN15</ingaggioZulu>
-  <tacche>
-    <tacca>
-      <durataORR>1,6</durataORR>
-    </tacca>
-    <tacca>
-      <durataORR>1,4</durataORR>
-    </tacca>
-  </tacche>
-
-  <!-- Sezione 4: controlli funzionali -->
-  <controlliFunzionali>
-  </controlliFunzionali>
-
-  <!-- Sezione 5: registrazione dei contatori -->
-  <contatori>
-    <turbomotore num="1">
-        <ore>3,1</ore>
-        <start></start>
-        <lcf1></lcf1>
-        <lcf2></lcf2>
-    </turbomotore>
-    <turbomotore num="2">
-        <ore>3,2</ore>
-        <start></start>
-        <lcf1></lcf1>
-        <lcf2></lcf2>
-    </turbomotore>
-    <turbomotore num="3">
-        <ore>3,1</ore>
-        <start></start>
-        <lcf1></lcf1>
-        <lcf2></lcf2>
-    </turbomotore>
-    <APU>
-      <ore>0,7</ore>
-      <start></start>
-    </APU>
-    <folding>
-      <blades></blades>
-      <tail></tail>
-      <both></both>
-    </folding>
-    <gancioBaricentrico>
-      <lbs05kORR></lbs05kORR>
-      <lbs10kORR></lbs10kORR>
-    </gancioBaricentrico>
-    <frenoRotore></frenoRotore>
-    <atterraggi>
-      <normali></normali>
-      <rullati></rullati>
-    </atterraggi>
-    <verricelloDiSoccorso>
-      <cicli></cicli>
-      <cavo></cavo>
-    </verricelloDiSoccorso>
-  </contatori>
-
-  <!-- Sezione 6: registrazione avarie -->
-  <avarie>
-  </avarie>
-
-  <!-- Sezione 5: Capo Equipaggio -->
-  <capoEquipaggio modo="stringa">STV (Pil.) Edoardo BETTIOL</capoEquipaggio>
-
+    <!-- Sezione 1: identificazione dell'aeromobile -->
+    <matricola>81633</matricola>
+    <!-- Sezione 2: condizioni preliminari al volo -->
+    <decolloDa>Sarzana</decolloDa>
+    <fusoOrarioLocale>A</fusoOrarioLocale>
+    <ispezione tipo="daily">
+        <GDOZulu>221030ZGEN15</GDOZulu>
+        <titolare modo="stringa">Sgt. SSP/TM SAER TUMBARELLO Giovanni</titolare>
+    </ispezione>
+    <efficienza>
+        <stato>CR</stato>
+        <posizione>E</posizione>
+        <titolare modo="codFisc">LFFMTT84E07E897J</titolare>
+    </efficienza>
+    <ispezione tipo="pre-flight">
+        <GDOZulu>231930ZGEN15</GDOZulu>
+        <titolare modo="stringa">Sc. 2^ cl. SSP/TM SAER ALFANO Giuseppe</titolare>
+    </ispezione>
+    <!-- Sezione 3: attivita' di volo -->
+    <ingaggioZulu>232105ZGEN15</ingaggioZulu>
+    <tacche>
+        <tacca>
+            <durataORR>1,6</durataORR>
+        </tacca>
+        <tacca>
+            <durataORR>1,4</durataORR>
+        </tacca>
+    </tacche>
+    <!-- Sezione 4: controlli funzionali -->
+    <controlliFunzionali/>
+    <!-- Sezione 5: registrazione dei contatori -->
+    <contatori>
+        <turbomotore num="1">
+            <ore>3,1</ore>
+            <start/>
+            <lcf1/>
+            <lcf2/>
+        </turbomotore>
+        <turbomotore num="2">
+            <ore>3,2</ore>
+            <start/>
+            <lcf1/>
+            <lcf2/>
+        </turbomotore>
+        <turbomotore num="3">
+            <ore>3,1</ore>
+            <start/>
+            <lcf1/>
+            <lcf2/>
+        </turbomotore>
+        <APU>
+            <ore>0,7</ore>
+            <start/>
+        </APU>
+        <folding>
+            <blades/>
+            <tail/>
+            <both/>
+        </folding>
+        <gancioBaricentrico>
+            <lbs05kORR/>
+            <lbs10kORR/>
+        </gancioBaricentrico>
+        <frenoRotore/>
+        <atterraggi>
+            <normali/>
+            <rullati/>
+        </atterraggi>
+        <verricelloDiSoccorso>
+            <cicli/>
+            <cavo/>
+        </verricelloDiSoccorso>
+    </contatori>
+    <!-- Sezione 6: registrazione avarie -->
+    <avarie/>
+    <!-- Sezione 5: Capo Equipaggio -->
+    <capoEquipaggio modo="stringa">STV (Pil.) Edoardo BETTIOL</capoEquipaggio>
 </voloEH101>
